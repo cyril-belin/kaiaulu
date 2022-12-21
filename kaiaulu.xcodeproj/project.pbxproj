@@ -11,6 +11,8 @@
 		03346CF62950DCAF00E0DDB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03346CF52950DCAF00E0DDB1 /* ContentView.swift */; };
 		03346CF82950DCB500E0DDB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03346CF72950DCB500E0DDB1 /* Assets.xcassets */; };
 		03346CFB2950DCB500E0DDB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03346CFA2950DCB500E0DDB1 /* Preview Assets.xcassets */; };
+		C7315BFE2953B2E4003A10F5 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7315BFD2953B2E4003A10F5 /* FeedView.swift */; };
+		C7315C022953B50A003A10F5 /* KaiauRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7315C012953B50A003A10F5 /* KaiauRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		03346CF52950DCAF00E0DDB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		03346CF72950DCB500E0DDB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03346CFA2950DCB500E0DDB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7315BFD2953B2E4003A10F5 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		C7315C012953B50A003A10F5 /* KaiauRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaiauRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,10 @@
 		03346CF22950DCAF00E0DDB1 /* kaiaulu */ = {
 			isa = PBXGroup;
 			children = (
+				C7315BF82953B1B7003A10F5 /* Service */,
+				C7315BF72953B1A5003A10F5 /* Model */,
+				C7315BF62953B0D2003A10F5 /* Extensions */,
+				C7315BF12953B073003A10F5 /* Core */,
 				03346CF32950DCAF00E0DDB1 /* kaiauluApp.swift */,
 				03346CF52950DCAF00E0DDB1 /* ContentView.swift */,
 				03346CF72950DCB500E0DDB1 /* Assets.xcassets */,
@@ -65,6 +73,76 @@
 				03346CFA2950DCB500E0DDB1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7315BF12953B073003A10F5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C7315BFA2953B20F003A10F5 /* Components */,
+				C7315BF92953B204003A10F5 /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C7315BF62953B0D2003A10F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C7315BF72953B1A5003A10F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7315BF82953B1B7003A10F5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C7315BF92953B204003A10F5 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				C7315BFC2953B2A5003A10F5 /* View */,
+				C7315BFB2953B285003A10F5 /* ViewModels */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		C7315BFA2953B20F003A10F5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C7315C002953B4A7003A10F5 /* Kaiau */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C7315BFB2953B285003A10F5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C7315BFC2953B2A5003A10F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7315BFD2953B2E4003A10F5 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7315C002953B4A7003A10F5 /* Kaiau */ = {
+			isa = PBXGroup;
+			children = (
+				C7315C012953B50A003A10F5 /* KaiauRowView.swift */,
+			);
+			path = Kaiau;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03346CF62950DCAF00E0DDB1 /* ContentView.swift in Sources */,
+				C7315BFE2953B2E4003A10F5 /* FeedView.swift in Sources */,
 				03346CF42950DCAF00E0DDB1 /* kaiauluApp.swift in Sources */,
+				C7315C022953B50A003A10F5 /* KaiauRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
